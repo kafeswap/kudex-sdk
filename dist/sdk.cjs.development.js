@@ -21,7 +21,7 @@ var _SOLIDITY_TYPE_MAXIMA;
 
 (function (ChainId) {
   ChainId[ChainId["MAINNET"] = 321] = "MAINNET";
-  ChainId[ChainId["BSCTESTNET"] = 97] = "BSCTESTNET";
+  ChainId[ChainId["BSCTESTNET"] = 322] = "BSCTESTNET";
 })(exports.ChainId || (exports.ChainId = {}));
 
 (function (TradeType) {
@@ -35,8 +35,8 @@ var _SOLIDITY_TYPE_MAXIMA;
   Rounding[Rounding["ROUND_UP"] = 2] = "ROUND_UP";
 })(exports.Rounding || (exports.Rounding = {}));
 
-var FACTORY_ADDRESS = '0xd48e7260B47cbA555B2c91DEdc4A2668cc3bd3E7';
-var INIT_CODE_HASH = '0x194f0698817351004661769afc1e48ad11cae0b4d410921e782e778c9eda3760';
+var FACTORY_ADDRESS = '0x90D6E240D70162b3323B3584DBb147Fb5C2F0867';
+var INIT_CODE_HASH = '0xe8af3f7dd61885c51db1ba7e4c382bd1831825f2351f102b731414de0a307198';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
 var ZERO = /*#__PURE__*/JSBI.BigInt(0);
@@ -435,7 +435,7 @@ function currencyEquals(currencyA, currencyB) {
     return currencyA === currencyB;
   }
 }
-var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0x4446fc4eb47f2f6586f9faab68b3498f86c07521', 18, 'WKCS', 'Wrapped KCS'), _WETH[exports.ChainId.BSCTESTNET] = /*#__PURE__*/new Token(exports.ChainId.BSCTESTNET, '0xaE8E19eFB41e7b96815649A6a60785e1fbA84C1e', 18, 'WBNB', 'Wrapped BNB'), _WETH);
+var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0x4446fc4eb47f2f6586f9faab68b3498f86c07521', 18, 'WKCS', 'Wrapped KCS'), _WETH[exports.ChainId.BSCTESTNET] = /*#__PURE__*/new Token(exports.ChainId.BSCTESTNET, '0x5512Ae5E7eE55869dA7dc2a5D2F74a5Df65683B8', 18, 'WKCS', 'Wrapped KCS'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
